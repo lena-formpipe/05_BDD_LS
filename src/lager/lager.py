@@ -1,6 +1,4 @@
 # kod för lagerhållning
-
-
 class StockItem:
     def __init__(self, name, amount):
         self.name = name
@@ -11,10 +9,8 @@ class Stock:
     def __init__(self):
         self.items = []
 
-
     def add_product(self, product):
         self.items.append(product)
-
 
     def increase_quantity(self, name, amount):
         # ökar antal om varan finns, annars skapa varan
@@ -23,7 +19,6 @@ class Stock:
             product.amount += amount
         else:
             self.add_product(StockItem(name, amount))
-
 
     def get_product(self, name):
         for item in self.items:

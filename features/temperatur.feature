@@ -2,12 +2,23 @@
 
   Feature: enkel temperaturomvandling Celsius och Fahrenheit
 
-    Scenario: Omvandla Fahrenheit till Celsius
-      Given : att jag har temperaturen 32 Fahrenheit
-      When : jag omvandlar till Celsius
-      Then : så ska svaret bli 0 Celsius
+    Scenario Outline: Omvandla Fahrenheit till Celsius
+      Given att jag har temperaturen <fahrenheit> Fahrenheit
+      When jag omvandlar till Celsius
+      Then ska svaret bli <celsius> Celsius
+      Examples:
+        |fahrenheit|celsius|
+        | 32       |0     |
+        | 212      |100   |
+        | -40      |-40   |
+        | 68       |20    |
 
-    Scenario: Omvandla Celsius till Fahrenheit
-      Given : att jag har temperaturen 100 Celsius
-      When : jag omvandlar till Fahrenheit
-      Then : så ska svaret bli 212 Fahrenheit
+    Scenario Outline: Omvandla Celsius till Fahrenheit
+      Given att jag har temperaturen <celsius> Celsius
+      When jag omvandlar till Fahrenheit
+      Then ska svaret bli <fahrenheit> Fahrenheit
+      Examples:
+        | celsius | fahrenheit |
+        | 0       | 32         |
+        | 100     | 212        |
+        | -40     | -40        |

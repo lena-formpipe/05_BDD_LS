@@ -6,9 +6,9 @@ Veckouppgift 5 - inlämning senast 20260921
 så att alla kan förstå vad systemet ska göra.
 - För att köra Gherkin-kod använder vi paketet behave.
 
-| Uppgift                  | Status      |
-|--------------------------|-------------|
-| 1 temperaturomvandling   | ej påbörjad |
-| 2 lagerhålllning         | ej påbörjad |
-| 3 bankkonto              | ej påbörjad |
-| 4 bibliotek              | ej påbörjad |
+| Uppgift                  | Status                 |
+|--------------------------|------------------------|
+| 1 temperaturomvandling   | klar, scenario outline |
+| 2 lagerhålllning         | klar, scenario outline |
+| 3 bankkonto              | 50% klar               |
+| 4 bibliotek              | ej påbörjad            |
