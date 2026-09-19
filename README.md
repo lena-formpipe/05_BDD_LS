@@ -10,5 +10,5 @@ så att alla kan förstå vad systemet ska göra.
 |--------------------------|------------------------|
 | 1 temperaturomvandling   | klar, scenario outline |
 | 2 lagerhålllning         | klar, scenario outline |
-| 3 bankkonto              | 50% klar               |
+| 3 bankkonto              | 80% klar, scenario     |
 | 4 bibliotek              | ej påbörjad            |

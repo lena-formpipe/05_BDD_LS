@@ -20,6 +20,13 @@ class BankAccount:
         else:
             return False
 
+    def interest_applied(self, percent: float):
+        # applicera ränta
+        saldo_before = self.get_amount()
+        interest_to_add = saldo_before * percent/100
+        self.deposit(interest_to_add)
+        return True
+
 
 class Transaction:
     # Transaction har ingen __init__ för att inget sparas
